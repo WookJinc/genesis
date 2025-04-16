@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Sans-Head-KR-Light';
+    src: url('../fonts/GenesisSansHeadKRLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sans-Head-KR-Regular';
+    src: url('../fonts/GenesisSansHeadKRRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sans-Head-Office-Light';
+    src: url('../fonts/GenesisSansHeadOffice-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sans-Head-Office-Regular';
+    src: url('../fonts/GenesisSansHeadOffice-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sans-Text-KR-Regular';
+    src: url('../fonts/GenesisSansTextKRRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sans-Text-Office-Regular';
+    src: url('../fonts/GenesisSansTextOffice-Regular.woff2') format('woff2');
+}
