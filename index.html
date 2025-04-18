@@ -11,10 +11,10 @@
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </head>
-
 <body>
     <div id="wrap">
         <header id="header">
@@ -50,25 +50,24 @@
                 <div class="inner">
                     <ul class="movin-list">
                         <li class="movin-item">G90</li>
-                        <li class="movin-item"><a href="#section-1">개요</a></li>
-                        <li class="movin-item"><a href="#section-2">외장 디자인</a></li>
-                        <li class="movin-item"><a href="#section-3">외장 색상</a></li>
-                        <li class="movin-item"><a href="#section-4">실내 디자인</a></li>
-                        <li class="movin-item"><a href="#section-5">편의 사양</a></li>
-                        <li class="movin-item"><a href="#section-6">테크놀로지</a></li>
-                        <li class="movin-item"><a href="#section-7">퍼포먼스</a></li>
-                        <li class="movin-item"><a href="#section-8">안전</a></li>
-                        <li class="movin-item"><a href="#section-9">액세서리</a></li>
-                        <li class="movin-item"><a href="#section-10">스펙</a></li>
+                        <li class="movin-item"><a href=".sc-intro">개요</a></li>
+                        <li class="movin-item"><a href=".grill-group">외장 디자인</a></li>
+                        <li class="movin-item"><a href=".color-group">외장 색상</a></li>
+                        <li class="movin-item"><a href=".sc-interior">실내 디자인</a></li>
+                        <li class="movin-item"><a href=".convenience-group">편의 사양</a></li>
+                        <li class="movin-item"><a href=".sc-technology">테크놀로지</a></li>
+                        <li class="movin-item"><a href=".sc-performance">퍼포먼스</a></li>
+                        <li class="movin-item"><a href=".sc-safety">안전</a></li>
+                        <li class="movin-item"><a href=".sc-acc">액세서리</a></li>
+                        <li class="movin-item"><a href=".sc-spec">스펙</a></li>
                     </ul>
                     <button class="btn-request">견적 내기</button>
                 </div>
             </nav>
             <div class="progress-bar"></div>
         </header>
-
         <main id="container">
-            <section class="sc-intro" id="section-1">
+            <section class="sc-intro">
                 <video class="video" autoplay muted playsinline loop>
                     <source src="./assets/images/genesis-kr-g90-key-visual-hero-large.mp4" type="video/mp4">
                 </video>
@@ -82,7 +81,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="sc-exterior">
                 <div class="exterior-group">
                     <div class="sticky">
@@ -122,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grill-group" id="section-2">
+                <div class="grill-group">
                     <div class="sticky">
                         <picture class="bg">
                             <img src="./assets/images/genesis-kr-g90-exterior-cover-dark-large.jpg" alt>
@@ -170,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="color-group" id="section-3">
+                <div class="color-group">
                     <picture class="bg">
                         <img src="./assets/images/genesis-kr-g90-colors-01-glossy-uyuni-white-large.png" alt>
                     </picture>
@@ -221,8 +219,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="sc-interior" id="section-4">
+            <section class="sc-interior">
                 <div class="seat-group">
                     <div class="sticky">
                         <picture class="bg">
@@ -329,7 +326,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="convenience-group" id="section-5">
+                <div class="convenience-group">
                     <picture class="bg">
                         <img src="./assets/images/genesis-kr-g90-full-layer-popup-visual-large.jpg" alt>
                     </picture>
@@ -383,8 +380,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="sc-technology" id="section-6">
+            <section class="sc-technology">
                 <div class="main-group">
                     <picture class="bg">
                         <img src="./assets/images/genesis-kr-g90-technology-large.jpg" alt="">
@@ -447,8 +443,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="sc-performance" id="section-7">
+            <section class="sc-performance">
                 <picture class="bg">
                     <img src="./assets/images/genesis-kr-g90-performance-large.jpg" alt>
                 </picture>
@@ -539,7 +534,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="sc-suspension">
                 <div class="main-group">
                     <picture class="bg">
@@ -594,8 +588,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="sc-safety" id="section-8">
+            <section class="sc-safety">
                 <div class="main-group">
                     <picture class="bg">
                         <img src="./assets/images/genesis-kr-g90-safety-large.jpg" alt>
@@ -657,8 +650,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="sc-acc" id="section-9">
+            <section class="sc-acc">
                 <picture class="bg">
                     <img src="./assets/images/genesis-kr-g90-accessories-large.jpg" alt>
                 </picture>
@@ -670,8 +662,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="sc-spec" id="section-10">
+            <section class="sc-spec">
                 <div class="main-group">
                     <div class="inner">
                         <div class="text-area text-area-1">
@@ -812,7 +803,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="sc-more">
                 <div class="spec-group">
                     <div class="inner">
@@ -897,12 +887,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="notice-area">
-                    <div class="col-1"></div>
-                    <div class="col-2"></div>
-                </div> -->
             </section>
-
             <section class="sc-model">
                 <div class="inner">
                     <div class="col col-1">
@@ -975,7 +960,6 @@
                 </div>
             </section>
         </main>
-
         <footer id="footer">
             <div class="row row-1">
                 <div class="inner">

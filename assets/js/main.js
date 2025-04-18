@@ -1,6 +1,25 @@
 $(window).on("load", function () {
     gsap.registerPlugin(ScrollTrigger);
 
+    // header > movin-list
+    document.querySelectorAll('.movin-list a[href^="."]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+    
+            const targetSelector = link.getAttribute('href');
+            const target = document.querySelector(targetSelector);
+    
+            if (target) {
+                gsap.to(window, {
+                    scrollTo: {
+                        y: target,
+                    },
+                    ease: "power2.out"
+                });
+            }
+        });
+    });
+
     // sc-exterior
     exteriorAni = gsap.timeline({});
     exteriorAni
@@ -57,9 +76,6 @@ $(window).on("load", function () {
                 scrub: true,
                 // markers: true,
             },
-            // onComplete: () => {
-            //     upAnimotion()
-            // },
             opacity: 1,
             xPercent: 0,
             scale: 1,
@@ -86,6 +102,9 @@ $(window).on("load", function () {
     // 텍스트 투명도 변화 애니메이션
     opacityAniEl = document.querySelectorAll('[data-opacity="true"]')
     opacityAniEl.forEach(element => {
+        let added = false;
+        const bg = document.querySelector(`${element.dataset.parent} .bg`);
+
         gsap.fromTo(element, {
             opacity: 0,
         }, {
@@ -95,6 +114,13 @@ $(window).on("load", function () {
                 end: "100% 100%",
                 scrub: true,
                 // markers: true,
+                onUpdate: (self) => {
+                    if (self.progress > 0.5 && !added && bg) {
+                        bg.style.maskImage = "linear-gradient(to bottom, black 80%, transparent 100%)";
+                        bg.style.webkitMaskImage = "linear-gradient(to bottom, black 80%, transparent 100%)";
+                        added = true;
+                    }
+                }
             },
             opacity: 1,
         }, )
