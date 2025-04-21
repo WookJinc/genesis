@@ -274,7 +274,6 @@ $(window).on("load", function () {
     })
 
     const images = document.querySelectorAll(".sc-interior .color-group .img-area .bg-ani");
-
     images.forEach((img, idx) => {
         gsap.fromTo(img, {
             clipPath: "inset(100% 0% 0% 0%)"
